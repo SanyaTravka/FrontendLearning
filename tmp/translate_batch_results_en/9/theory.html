@@ -1,0 +1,26 @@
+# Table Body
+<p>Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage.</p>
+<p>Long tables can be sectioned off using the <em>table body</em> element: <code>&lt;tbody&gt;</code>. </p>
+<p>The <code>&lt;tbody&gt;</code> element should contain all of the table’s data, excluding the table headings (more on this in a later exercise).</p>
+<pre><code><div><span>&lt;</span><span>table</span><span>&gt;</span>
+  <span>&lt;</span><span>tbody</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span><span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span>Saturday<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span>Sunday<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span>Morning<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"2"</span><span>&gt;</span>Work<span>&lt;/</span><span>td</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"3"</span><span>&gt;</span>Relax<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+     <span>&lt;</span><span>th</span><span>&gt;</span>Afternoon<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span>Evening<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span><span>&gt;</span>Dinner<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;/</span><span>tbody</span><span>&gt;</span>
+<span>&lt;/</span><span>table</span><span>&gt;</span></div></code></pre>
+<p>In the example above, all of the table data is contained within a table body element. Note, however, that the headings were also kept in the table’s body — we’ll change this in the next exercise.</p>

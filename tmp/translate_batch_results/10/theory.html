@@ -1,0 +1,24 @@
+# Голова стола
+<p>В последнем упражнении заголовки таблицы оставались внутри тела таблицы. Однако, когда тело таблицы разделено на части, также имеет смысл <code>&lt;thead&gt;</code> заголовки столбцов таблицы с помощью элемента <code>&lt;thead&gt;</code> .</p><pre><div> <span>&lt;</span> <span>таблица</span> <span>&gt;</span>
+  <span>&lt;</span> <span>thead</span> <span>&gt;</span>
+    <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+      <span>&lt;</span> <span>th</span> <span>&gt;</span> <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+      <span>&lt;</span> <span>th</span> <span>scope</span> = <span>&quot;col&quot;</span> <span>&gt;</span> суббота <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+      <span>&lt;</span> <span>th</span> <span>scope</span> = <span>&quot;col&quot;</span> <span>&gt;</span> воскресенье <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>thead</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tbody</span> <span>&gt;</span>
+    <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+      <span>&lt;</span> <span>th</span> <span>scope</span> = <span>&quot;row&quot;</span> <span>&gt;</span> Утро <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+      <span>&lt;</span> <span>td</span> <span>rowspan</span> = <span>&quot;2&quot;</span> <span>&gt;</span> Работа <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+      <span>&lt;</span> <span>td</span> <span>rowspan</span> = <span>&quot;3&quot;</span> <span>&gt;</span> Расслабьтесь <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+    <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+    <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+     <span>&lt;</span> <span>th</span> <span>scope</span> = <span>&quot;row&quot;</span> <span>&gt;</span> После полудня <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+    <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+      <span>&lt;</span> <span>th</span> <span>scope</span> = <span>&quot;row&quot;</span> <span>&gt;</span> Вечер <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+      <span>&lt;</span> <span>td</span> <span>&gt;</span> Ужин <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+    <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tbody</span> <span>&gt;</span>
+<span>&lt;/</span> <span>таблица</span> <span>&gt;</span></div></pre><p> В приведенном выше примере единственным новым элементом является <code>&lt;thead&gt;</code> . Заголовки таблиц содержатся внутри этого элемента. Обратите внимание, что в заголовке таблицы по-прежнему требуется строка, чтобы содержать заголовки таблицы.</p><p> Кроме того, только заголовки <strong>столбцов</strong> идут под <code>&lt;thead&gt;</code> элемента. Мы можем использовать атрибут <code>scope</code> в элементах <code>&lt;th&gt;</code> чтобы указать, используется ли элемент <code>&lt;th&gt;</code> в качестве заголовка <code>&quot;row&quot;</code> или заголовка <code>&quot;col&quot;</code> .</p>

@@ -1,0 +1,29 @@
+# Связующие столбцы
+<p>Что, если таблица содержит данные, охватывающие несколько столбцов?</p>
+<p>
+  Например, в личном календаре могут быть события, которые охватывают несколько
+  часов или даже несколько дней.
+</p>
+<p>
+  Данные могут охватывать столбцы с помощью атрибута <code>colspan</code> .
+  Атрибуты принимают целое число (больше или равное 1) для обозначения
+  количества столбцов, которые он охватывает.
+</p>
+<pre><div> <span>&lt;</span> <span>таблица</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> понедельник <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> вторник <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> среда <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span>
+    <span>&lt;</span> <span>td</span> <span>colspan</span> = <span>&quot;2&quot;</span> <span>&gt; За</span> городом <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+    <span>&lt;</span> <span>td</span> <span>&gt;</span> Снова в городе <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+<span>&lt;/</span> <span>таблица</span> <span>&gt;</span></div></pre>
+<p>
+  В приведенном выше примере данные <code>Out of Town</code> охватывают
+  заголовки таблиц <code>Monday</code> и <code>Tuesday</code> с использованием
+  значения <code>2</code> (два столбца). Данные
+  <code>Back in Town</code> появляются только под заголовком
+  <code>Wednesday</code> .
+</p>

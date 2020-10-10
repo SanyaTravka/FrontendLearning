@@ -1,0 +1,20 @@
+# Связующие строки
+<p>Данные также могут охватывать несколько строк, используя атрибут <code>rowspan</code> .</p><p> Атрибут <code>rowspan</code> используется для данных, охватывающих несколько строк (возможно, в определенный день событие продолжается несколько часов). Он принимает целое число (большее или равное 1) для обозначения количества строк, которые оно охватывает.</p><pre><div> <span>&lt;</span> <span>таблица</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span> <span>&lt;! - Ряд 1 -&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> суббота <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> воскресенье <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span> <span>&lt;! - Ряд 2 -&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> Утро <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>td</span> <span>rowspan</span> = <span>&quot;2&quot;</span> <span>&gt;</span> Работа <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+    <span>&lt;</span> <span>td</span> <span>rowspan</span> = <span>&quot;3&quot;</span> <span>&gt;</span> Расслабьтесь <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span> <span>&lt;! - Ряд 3 -&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> день <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+  <span>&lt;</span> <span>tr</span> <span>&gt;</span> <span>&lt;! - Ряд 4 -&gt;</span>
+    <span>&lt;</span> <span>th</span> <span>&gt;</span> Вечер <span>&lt;/</span> <span>th</span> <span>&gt;</span>
+    <span>&lt;</span> <span>td</span> <span>&gt;</span> Ужин <span>&lt;/</span> <span>td</span> <span>&gt;</span>
+  <span>&lt;/</span> <span>tr</span> <span>&gt;</span>
+<span>&lt;/</span> <span>таблица</span> <span>&gt;</span></div></pre><p> В приведенном выше примере четыре строки:</p><ol><li> Первая строка содержит пустую ячейку и два заголовка столбцов.</li><li> Вторая строка содержит заголовок строки « <code>Morning</code> вместе с заголовком « <code>Work</code> , который занимает две строки под столбцом « <code>Saturday</code> . Запись «Расслабьтесь» занимает три строки под столбцом « <code>Sunday</code> .</li><li> Третья строка содержит только заголовок строки <code>Afternoon</code> .</li><li> Четвертая строка содержит только запись « <code>Dinner</code> , поскольку «Расслабление» занимает соседнюю ячейку.</li></ol><p> Если вы хотите увидеть, как браузер интерпретирует приведенный выше код, скопируйте его и вставьте в редактор кода, чтобы лучше понять его.</p>

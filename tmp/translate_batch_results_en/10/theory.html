@@ -1,0 +1,27 @@
+# Table Head
+<p>In the last exercise, the table’s headings were kept inside of the table’s body. When a table’s body is sectioned off, however, it also makes sense to section off the table’s column headings using the <code>&lt;thead&gt;</code> element.</p>
+<pre><code><div><span>&lt;</span><span>table</span><span>&gt;</span>
+  <span>&lt;</span><span>thead</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span><span>&gt;</span><span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span> <span>scope</span>=<span>"col"</span><span>&gt;</span>Saturday<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span> <span>scope</span>=<span>"col"</span><span>&gt;</span>Sunday<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;/</span><span>thead</span><span>&gt;</span>
+  <span>&lt;</span><span>tbody</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span> <span>scope</span>=<span>"row"</span><span>&gt;</span>Morning<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"2"</span><span>&gt;</span>Work<span>&lt;/</span><span>td</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"3"</span><span>&gt;</span>Relax<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+     <span>&lt;</span><span>th</span> <span>scope</span>=<span>"row"</span><span>&gt;</span>Afternoon<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>tr</span><span>&gt;</span>
+      <span>&lt;</span><span>th</span> <span>scope</span>=<span>"row"</span><span>&gt;</span>Evening<span>&lt;/</span><span>th</span><span>&gt;</span>
+      <span>&lt;</span><span>td</span><span>&gt;</span>Dinner<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;/</span><span>tbody</span><span>&gt;</span>
+<span>&lt;/</span><span>table</span><span>&gt;</span></div></code></pre>
+<p>In the example above, the only new element is <code>&lt;thead&gt;</code>. The table headings are contained inside of this element. Note that the table’s head still requires a row in order to contain the table headings.</p>
+<p>Additionally, only the <strong>column</strong> headings go under the <code>&lt;thead&gt;</code> element. We can use the <code>scope</code> attribute on <code>&lt;th&gt;</code> elements to indicate whether a <code>&lt;th&gt;</code> element is being used as a <code>"row"</code> heading or a <code>"col"</code> heading.</p>

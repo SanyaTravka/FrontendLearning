@@ -1,0 +1,16 @@
+# Spanning Columns
+<p>What if the table contains data that spans multiple columns?</p>
+<p>For example, a personal calendar could have events that span across multiple hours, or even multiple days.</p>
+<p>Data can span columns using the <code>colspan</code> attribute. The attributes accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.</p>
+<pre><code><div><span>&lt;</span><span>table</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Monday<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Tuesday<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Wednesday<span>&lt;/</span><span>th</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span> <span>colspan</span>=<span>"2"</span><span>&gt;</span>Out of Town<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span><span>&gt;</span>Back in Town<span>&lt;/</span><span>td</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+<span>&lt;/</span><span>table</span><span>&gt;</span></div></code></pre>
+<p>In the example above, the data <code>Out of Town</code> spans the <code>Monday</code> and <code>Tuesday</code> table headings using the value <code>2</code> (two columns). The data <code>Back in Town</code> appear only under the <code>Wednesday</code> heading.</p>

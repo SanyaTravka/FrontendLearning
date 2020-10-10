@@ -1,0 +1,17 @@
+# Table Borders
+<p>So far, the tables you’ve created have been a little difficult to read because they have no borders. </p>
+<p>In older versions of HTML, a border could be added to a table using the <code>border</code> attribute and setting it equal to an integer. This integer would represent the thickness of the border.</p>
+<pre><code><div><span>&lt;</span><span>table</span> <span>border</span>=<span>"1"</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span><span>&gt;</span>73<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span><span>&gt;</span>81<span>&lt;/</span><span>td</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+<span>&lt;/</span><span>table</span><span>&gt;</span></div></code></pre>
+<p>The code in the example above is following is <a href="https://en.wikipedia.org/wiki/Deprecation" target="_blank" rel="noopener">deprecated</a>, so please don’t use it. It’s meant to illustrate older conventions you may come across when reading other developers’ code.</p>
+<p>The browser will likely still interpret your code correctly if you use the <code>border</code> attribute, but that doesn’t mean the attribute should be used.</p>
+<p>We use CSS to add style to HTML documents, because it helps us to separate the structure of a page from how it looks. You can learn more about CSS in our CSS courses.</p>
+<p>You can achieve the same table border effect using CSS.</p>
+<pre><code><div><span>table</span>, <span>td</span> {
+  <span>border</span>: <span>1px</span> <span>solid</span> <span>black</span>;
+}</div></code></pre>
+<p>The code in the example above uses CSS instead of HTML to show table borders.</p>

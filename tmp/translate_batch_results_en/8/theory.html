@@ -1,0 +1,30 @@
+# Spanning Rows
+<p>Data can also span multiple rows using the <code>rowspan</code> attribute.</p>
+<p>The <code>rowspan</code> attribute is used for data that spans multiple rows (perhaps an event goes on for multiple hours on a certain day). It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.</p>
+<pre><code><div><span>&lt;</span><span>table</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span> <span>&lt;!-- Row 1 --&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span><span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Saturday<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Sunday<span>&lt;/</span><span>th</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span> <span>&lt;!-- Row 2 --&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Morning<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"2"</span><span>&gt;</span>Work<span>&lt;/</span><span>td</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span> <span>rowspan</span>=<span>"3"</span><span>&gt;</span>Relax<span>&lt;/</span><span>td</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span> <span>&lt;!-- Row 3 --&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Afternoon<span>&lt;/</span><span>th</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+  <span>&lt;</span><span>tr</span><span>&gt;</span> <span>&lt;!-- Row 4 --&gt;</span>
+    <span>&lt;</span><span>th</span><span>&gt;</span>Evening<span>&lt;/</span><span>th</span><span>&gt;</span>
+    <span>&lt;</span><span>td</span><span>&gt;</span>Dinner<span>&lt;/</span><span>td</span><span>&gt;</span>
+  <span>&lt;/</span><span>tr</span><span>&gt;</span>
+<span>&lt;/</span><span>table</span><span>&gt;</span></div></code></pre>
+<p>In the example above, there are four rows:</p>
+<ol>
+<li>The first row contains an empty cell and the two column headings.</li>
+<li>The second row contains the <code>Morning</code> row heading, along with <code>Work</code>, which spans two rows under the <code>Saturday</code> column. The “Relax” entry spans three rows under the <code>Sunday</code> column.</li>
+<li>The third row only contains the <code>Afternoon</code> row heading.</li>
+<li>The fourth row only contains the <code>Dinner</code> entry, since “Relax” spans into the cell next to it.</li>
+</ol>
+<p>If you’d like to see how the browser interprets the code above, feel free to copy and paste it into the code editor to understand it a little better.</p>
