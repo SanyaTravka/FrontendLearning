@@ -1,24 +1,27 @@
 p {
-  color: blue;
+    color: blue;
 }
+
 .sasha {
     color: coral;
 }
 
 .title {
-  color: teal;
+    color: teal;
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 #GGG {
     color: cornflowerblue;
 }
 
 h1.special {
-  color: aqua;
+    color: aqua;
 }
+
 .list li {
-color: darkorange ;
+    color: darkorange;
 }

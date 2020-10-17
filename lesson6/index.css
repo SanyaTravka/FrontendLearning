@@ -1,0 +1,16 @@
+.red {
+    background-color: salmon;
+    height: 100px;
+    width: 100px;
+}
+
+.green {
+    background-color: seagreen;
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
