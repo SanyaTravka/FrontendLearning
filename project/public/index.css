@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -9,7 +10,6 @@ li {
 
 .img1 {
     margin-top: 45px;
-    margin-left: 191;
 }
 
 .navigation {
@@ -101,6 +101,14 @@ li {
     margin-bottom: 40px;
 }
 
+.changeOpacity {
+    opacity: 0.7;
+}
+
+.changeOpacity1 {
+    opacity: 0.75;
+}
+
 @media only screen and (max-width: 1000px) {
     body {
         background-color: greenyellow;
@@ -119,6 +127,7 @@ li {
         font-size: 40px;
     }
     .img1 {
+        width: 80px;
         margin-right: 10px;
     }
     .topOfTheUlChanges {
@@ -139,7 +148,7 @@ li {
         width: 100px;
     }
     .fontChanges {
-        font-size: 80px;
+        font-size: 50px;
     }
     .firstH {
         font-size: 50px;
@@ -148,6 +157,9 @@ li {
         display: none;
     }
     .navigation {
+        display: none;
+    }
+    .starUl {
         display: none;
     }
 }
