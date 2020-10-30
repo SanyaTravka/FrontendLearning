@@ -16,7 +16,7 @@
             <li class="changeOpacity">About</li>
             <li class="changeOpacity">Partner</li>
             <li class="login">Login</li>
-            <li class="register button">Register</li>
+            <li class="register">Register</li>
         </ul>
     </header>
     <main>
@@ -26,17 +26,49 @@
                     <h1 class="firstH">Explore and <br class="br"> travel <br class="br"> Holiday finder</h1>
                 </div>
                 <form class="settings needMoreWidth">
-                    <select class="chagesSettings" name="Location">
-                        <option value="pizza">Location</option>
-                    </select>
-                    <select class="chagesSettings" name="Activity">
-                        <option value="pizza">Activity</option>
-                    </select>
-                    <select class="chagesSettings" name="Date">
-                        <option value="pizza">Date</option>
-                    </select>
-                    <input class="chagesSettings" class="button" type="submit" value="Explore">
+                    <label for="select" class="select">
+                        <input type="radio" name="list" value="not_changed" id="bg" checked />
+                        <input type="radio" name="list" value="not_changed" id="select">
+                        <label class="bg" for="bg"></label>
+                    <div class="items">
+                        <input type="radio" name="list" value="first_value" id="list[0]">
+                        <label for="list[0]">First option</label>
+                        <input type="radio" name="list" value="second_value" id="list[1]">
+                        <label for="list[1]">Second loooooong option</label>
+                        <span id="text">Location</span>
+                    </div>
+                    </label>
+                    <br>
+                    <label for="select" class="select">
+                    <input type="radio" name="list" value="not_changed" id="bg" checked />
+                    <input type="radio" name="list" value="not_changed" id="select">
+                    <label class="bg" for="bg"></label>
+                    <div class="items">
+                        <input type="radio" name="list" value="first_value" id="list[0]">
+                        <label for="list[0]">First option</label>
+                        <input type="radio" name="list" value="second_value" id="list[1]">
+                        <label for="list[1]">Second loooooong option</label>
+                        <span id="text">Activity</span>
+                    </div>
+                    </label>
+                    <br>
+                    <label for="select" class="select">
+                    <input type="radio" name="list" value="not_changed" id="bg" checked />
+                    <input type="radio" name="list" value="not_changed" id="select">
+                    <label class="bg" for="bg"></label>
+                    <div class="items">
+                        <input type="radio" name="list" value="first_value" id="list[0]">
+                        <label for="list[0]">First option</label>
+                        <input type="radio" name="list" value="second_value" id="list[1]">
+                        <label for="list[1]">Second loooooong option</label>
+                        <span id="text">Date</span>
+                    </div>
+                    </label>
+
                 </form>
+                <div class="buttonDiv">
+                    <input class="button" type="submit" value="Explore">
+                </div>
             </div>
             <div>
                 <img class="needMoreWidth" src="./media/thousand-01 1.svg">
@@ -47,7 +79,7 @@
             <div class="text2 fontChanges">
                 <h2>A new way to explore the<br> world </h2>
                 <p class="changeOpacity">For decades travellers have reached for Lonely Planet<br> books when looking to plan and execute their perfect<br> trip, but now, they can also let Lonely Planet Experiences<br> lead the way</p>
-                <a href="#" class="button">Learn more</a>
+                <a href="#" class="buttonDiv">Learn more</a>
             </div>
         </section>
         <section>
@@ -82,7 +114,7 @@
             <div class="text1 fontChanges">
                 <h2>Guides by Thousand Sunny</h2>
                 <p class="changeOpacity">Packed with tips and advice from our on-the-ground<br> experts, our city guides app (iOS and Android) is the<br> ultimate resource before and during a trip.</p>
-                <p class="button">Download</p>
+                <a href="#" class="buttonDiv">Download</a>
             </div>
             <img class="needMoreWidth" src="./media/Thousand-03.svg">
         </section>
@@ -115,7 +147,7 @@
                             <p>The many benefits of <br>taking a healing holiday</p>
                             <p>‘Helaing holidays’ are on the rise<br> tohelp maximise your health and<br>happines...</p>
                         </div>
-                        <a href="#">Read more</a>
+                        <a href="#" class="vievAll">Read more</a>
                     </div>
                 </li>
                 <li>
@@ -125,7 +157,7 @@
                             <p>The best Kyoto restaurant<br>to try Japanese food</p>
                             <p>From tofu to teahouses, here’s<br>our guide to Kyoto’s best restaurants<br> to visit...</p>
                         </div>
-                        <a href="#">Read more</a>
+                        <a href="#" class="vievAll">Read more</a>
                     </div>
                 </li>
                 <li>
@@ -135,7 +167,7 @@
                             <p>Skip Chichen Itza and head<br>to this remote Yucatan</p>
                             <p>It’s remote and challenging to get,<br> but braving the jungle and exploring<br> these ruins without the...</p>
                         </div>
-                        <a href="#">Read more</a>
+                        <a href="#" class="vievAll">Read more</a>
                     </div>
                 </li>
                 <li>
@@ -145,7 +177,7 @@
                             <p>Surf’s up at these beginner<br> spots around the world</p>
                             <p>If learning to surf has in on your to-<br> do list for a while, the good news<br> is: it’s never too late...</p>
                         </div>
-                        <a href="#">Read more</a>
+                        <a href="#" class="vievAll">Read more</a>
                     </div>
                 </li>
             </ul>
@@ -200,7 +232,7 @@
                     <a href="#"><img class="imgFooterSet" src="./media/Vector (1).svg"></a>
                 </li>
                 <li>
-                    <a href="#"><img class="imgFooterSet" src="./media/Vector (2).svg"></a>
+                    <a href="#"><img class="imgFooterSet" src="./media/Group1.svg"></a>
                 </li>
                 <li>
                     <a href="#"><img class="imgFooterSet" src="./media/Group.svg"></a>

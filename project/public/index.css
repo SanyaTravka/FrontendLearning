@@ -1,165 +1,305 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-}
-
-li {
-    list-style-type: none;
-}
-
-.img1 {
-    margin-top: 45px;
-}
-
-.navigation {
-    margin-top: 50px;
-    display: flex;
-}
-
-.navigation>li {
-    margin-right: 34px;
-}
-
-.posOfMain {
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 200px;
-}
-
-.header {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.posOfMain {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ulPosition {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerInformationPosition {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.text1 {
-    margin-top: 100px;
-    margin-left: 200px;
-}
-
-.text2 {
-    margin-right: 200px;
-    margin-top: 100px;
-}
-
-.imgEdvard {
-    margin-right: 300px;
-}
-
-.testimonialsText {
-    margin-left: 250px;
-}
-
-.topOfTheUl {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.needMarginTop {
-    margin-top: 300px;
-}
-
-.posOfMessengers {
-    display: flex;
-    justify-content: space-between;
-    max-width: 200px;
-    margin: 0 auto;
-}
-
-.ulChanges {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.topOfTheUlChanges {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.posOfMessengers1 {
-    margin-top: 120px;
-    margin-bottom: 40px;
-}
-
-.changeOpacity {
-    opacity: 0.7;
-}
-
-.changeOpacity1 {
-    opacity: 0.75;
-}
-
-@media only screen and (max-width: 1000px) {
-    body {
-        background-color: greenyellow;
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
     }
-    .footerInformationPosition {
-        display: block;
+    
+    li {
+        list-style-type: none;
     }
-    .posOfMain {
-        display: block;
-    }
-    .settings {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    .navigation {
-        font-size: 40px;
-    }
+    
     .img1 {
-        width: 80px;
-        margin-right: 10px;
+        margin-top: 45px;
     }
-    .topOfTheUlChanges {
-        font-size: 50px;
+    
+    .navigation {
+        margin-top: 50px;
+        display: flex;
     }
+    
+    .navigation>li {
+        margin-right: 34px;
+    }
+    
+    .posOfMain {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    
+    .header {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .posOfMain {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ulPosition {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footerInformationPosition {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .text1 {
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    
+    .text2 {
+        margin-right: 200px;
+        margin-top: 100px;
+    }
+    
+    .imgEdvard {
+        margin-right: 300px;
+    }
+    
+    .testimonialsText {
+        margin-left: 250px;
+    }
+    
+    .topOfTheUl {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    .needMarginTop {
+        margin-top: 300px;
+    }
+    
+    .posOfMessengers {
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
     .ulChanges {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .topOfTheUlChanges {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    .posOfMessengers1 {
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    
+    .changeOpacity {
+        opacity: 0.7;
+    }
+    
+    .changeOpacity1 {
+        opacity: 0.75;
+    }
+    
+    .register {
+        padding: 12px 25px;
+        background-color: #FB8F1D;
+        border-radius: 8px;
+        color: #FFF;
+        margin-top: -12px;
+        padding-bottom: 0px;
+        height: 30px;
+    }
+    
+    .login {
+        padding: 12px 30px;
+        background-color: #FFF;
+        border-radius: 8px;
+        color: #FB8F1D;
+        border: 1px solid #FB8F1D;
+        margin-top: -12px;
+        padding-bottom: 0px;
+        height: 30px;
+    }
+    
+    .vievAll {
+        color: #FB8F1D;
+    }
+    
+    .buttonDiv {
+        padding: 12px 25px;
+        background-color: #FB8F1D;
+        border-radius: 8px;
+        color: #FFF;
+        margin-top: 30px;
+    }
+    /* Этот код взяли с хабра https://habr.com/ru/post/442888/*/
+    
+    form input {
+        display: none;
+    }
+    
+    form #text {
+        position: absolute;
+        display: block;
+        top: 0;
+        padding-left: 10px;
+    }
+    
+    .select {
+        display: inline-block;
+        width: 160px;
+        height: 34px;
+        line-height: 30px;
+        position: relative;
+    }
+    
+    .select:before {
+        content: ">";
+        display: inline-block;
+        background: white;
+        position: absolute;
+        right: -5px;
+        top: 2px;
+        z-index: 2;
+        width: 30px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        border: 2px solid #ddd;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+    
+    .select input[name="list"]:not(:checked)~#text {
+        color: black;
+        background: white;
+    }
+    
+    .select input[name="list"]:checked~#text {
+        background: transparent;
+        color: transparent;
+        z-index: 2;
+    }
+    
+    #select:disabled~.items #text {
+        background: #eee;
+    }
+    
+    .items {
+        display: block;
+        min-height: 30px;
+        position: absolute;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        width: 160px;
+        cursor: pointer;
+    }
+    
+    #select:not(:checked)~.items {
+        height: 30px;
+    }
+    
+    .items label {
+        border-top: 2px solid #ddd;
+        display: none;
+        padding-left: 10px;
+        background: white;
+    }
+    
+    .items label:hover {
+        background: #eee;
+        cursor: pointer;
+    }
+    
+    #select:checked~.items {
+        padding-top: 30px;
+    }
+    
+    #select:checked~.items label {
         display: block;
     }
-    .needMoreWidth {
-        width: 100%;
+    
+    .items input:checked+label {
+        display: block!important;
+        border: none;
+        background: white;
     }
-    .chagesSettings {
-        width: 40%;
-        height: 60px;
+    
+    #select:checked~.bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background: rgba(0, 0, 0, 0.4);
     }
-    .imgFooterSet {
-        height: 100px;
-        width: 100px;
+    
+    a {
+        display: block;
+        width: 160px;
+        text-align: center;
+        padding: 5px 0;
+        color: black;
+        text-decoration: none;
+        border: 2px solid #ddd;
     }
-    .fontChanges {
-        font-size: 50px;
+    /* Кастомный код закончился */
+    
+    @media only screen and (max-width: 1000px) {
+        .footerInformationPosition {
+            display: block;
+        }
+        .posOfMain {
+            display: block;
+            margin: 0 auto;
+        }
+        .settings {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .navigation {
+            font-size: 40px;
+        }
+        .img1 {
+            width: 80px;
+            margin-right: 10px;
+        }
+        .topOfTheUlChanges {
+            font-size: 50px;
+        }
+        .ulChanges {
+            display: block;
+        }
+        .needMoreWidth {
+            width: 100%;
+        }
+        .imgFooterSet {
+            height: 100px;
+            width: 100px;
+        }
+        .fontChanges {
+            font-size: 50px;
+        }
+        .firstH {
+            font-size: 50px;
+        }
+        .br {
+            display: none;
+        }
+        .navigation {
+            display: none;
+        }
+        .starUl {
+            display: none;
+        }
     }
-    .firstH {
-        font-size: 50px;
-    }
-    .br {
-        display: none;
-    }
-    .navigation {
-        display: none;
-    }
-    .starUl {
-        display: none;
-    }
-}
