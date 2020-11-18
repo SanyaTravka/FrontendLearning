@@ -141,6 +141,10 @@
         color: #FFF;
         margin-top: 30px;
     }
+    
+    .adaptiveMenu {
+        height: 30px;
+    }
     /* Этот код взяли с хабра https://habr.com/ru/post/442888/*/
     
     form input {
@@ -267,9 +271,6 @@
             margin-top: 100px;
             margin-bottom: 100px;
         }
-        .navigation {
-            font-size: 40px;
-        }
         .img1 {
             width: 80px;
             margin-right: 10px;
@@ -286,6 +287,7 @@
         .imgFooterSet {
             height: 100px;
             width: 100px;
+            display: none;
         }
         .fontChanges {
             font-size: 50px;
@@ -298,8 +300,27 @@
         }
         .navigation {
             display: none;
+            z-index: 1;
+            margin-top: 130px;
+            font-size: 40px;
+        }
+        .navigation li {
+            margin-top: 50px;
         }
         .starUl {
             display: none;
+        }
+        .register {
+            color: black;
+        }
+        .img1 {
+            height: 100px;
+            margin-left: 45px;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        main {
+            width: 120%;
         }
     }
